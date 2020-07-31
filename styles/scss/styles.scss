@@ -1,0 +1,47 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: url(../../images/bg-desktop.png) hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+section {
+    .container{
+        height: calc(100vh - 12px);
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        .firstBox{
+            background-color: hsl(228, 56%, 26%);
+            align-self: center;
+            justify-self: right;
+            margin-right: 20px;
+            width: 300px;
+            border-radius: 10px 80px 10px 10px;
+            .logoBox{
+                padding: 20px 0 5px 20px;
+            }
+            .optionBox{
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline;
+                        background-color: hsl(229, 57%, 11%);
+                    }
+                }
+            }
+        }
+        .secondBox{
+            background-color: hsl(228, 56%, 26%);
+            width: fit-content;
+            align-self: center;
+            margin-left: 20px;
+        }
+    }
+}
